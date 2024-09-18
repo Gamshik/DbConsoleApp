@@ -15,7 +15,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Build for ${{ matrix.target_os_name }}
+      - name: Make scripts executable
+      run: chmod +x ./scripts/*.sh
+      shell: bash
+
+      - name: Build for ${{ matrix.target_os_name }}
       # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
       # run: ../../scripts/${{ matrix.target_os }}_build.sh
       run: ./scripts/${{ matrix.target_os }}_build.sh
