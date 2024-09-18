@@ -12,7 +12,7 @@ jobs:
       matrix:
         target_os: [win-x64, linux-x64]
 
-    runs-on: windows-latest
+    runs-on: linux run-latest
 
     steps:
     - name: Build for ${{ matrix.target_os_name }}
