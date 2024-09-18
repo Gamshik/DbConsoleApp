@@ -20,5 +20,6 @@ jobs:
 
     steps:
     - name: Build for ${{ matrix.target_os_name }}
-      run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
+      # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
+      run: ls -a
       working-directory: ${{ env.WORKING-DIRECTORY }}
