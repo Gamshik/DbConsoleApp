@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\app\\app.csproj": {}
+    "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj": {}
   },
   "projects": {
-    "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\app\\app.csproj": {
+    "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\app\\app.csproj",
+        "projectUniqueName": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\app\\app.csproj",
+        "projectPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj",
         "packagesPath": "C:\\Users\\glebo\\.nuget\\packages\\",
-        "outputPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\app\\obj\\",
+        "outputPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
