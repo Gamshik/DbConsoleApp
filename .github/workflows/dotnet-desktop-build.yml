@@ -15,6 +15,10 @@ jobs:
 
     runs-on: windows-latest
 
+    env:
+      WORKING-DIRECTORY: ./db_app
+
     steps:
     - name: Build for ${{ matrix.target_os_name }}
       run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
+      working-directory: ${{ env.WORKING-DIRECTORY }}
