@@ -11,7 +11,6 @@ jobs:
     strategy:
       matrix:
         target_os: [win-x64, linux-x64]
-        target_os_name: [Windows, Linux]
 
     runs-on: windows-latest
 
@@ -19,7 +18,7 @@ jobs:
       WORKING-DIRECTORY: db_app
 
     steps:
-    - name: Build for ${{ matrix.target_os_name }}
+    - name: Build for ${{ matrix.target_os }}
       # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
       run: ls -a
       working-directory: ${{ env.WORKING-DIRECTORY }}
