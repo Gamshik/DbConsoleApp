@@ -1,0 +1,20 @@
+name: DbApp
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        target_os: [win-x64, linux-x64]
+        target_os_name: [Windows, Linux]
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Build for ${{ matrix.target_os_name }}
+      run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
