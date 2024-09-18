@@ -18,5 +18,6 @@ jobs:
     - name: Build for ${{ matrix.target_os_name }}
       # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
       # run: ../../scripts/${{ matrix.target_os }}_build.sh
-      run: ls
+      run: ./scripts/${{ matrix.target_os }}_build.sh
+      shell: bash
       #
