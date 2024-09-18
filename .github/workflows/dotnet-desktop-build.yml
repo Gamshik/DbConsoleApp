@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      WORKING-DIRECTORY: ./db_app
+      WORKING-DIRECTORY: db_app
 
     steps:
     - name: Build for ${{ matrix.target_os_name }}
