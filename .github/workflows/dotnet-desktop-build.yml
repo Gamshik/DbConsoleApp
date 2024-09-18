@@ -21,4 +21,4 @@ jobs:
     - name: Build for ${{ matrix.target_os }}
       # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
       run: ls -a
-      working-directory: ${{ env.WORKING-DIRECTORY }}
+      # working-directory: ${{ env.WORKING-DIRECTORY }}
