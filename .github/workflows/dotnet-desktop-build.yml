@@ -20,4 +20,3 @@ jobs:
       # run: ../../scripts/${{ matrix.target_os }}_build.sh
       run: ./scripts/${{ matrix.target_os }}_build.sh
       shell: bash
-      #
