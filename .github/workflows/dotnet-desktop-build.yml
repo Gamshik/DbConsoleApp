@@ -15,12 +15,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Make scripts executable
-      run: chmod +x ./scripts/*.sh
-      shell: bash
+      - uses: actions/checkout@v4
 
       - name: Build for ${{ matrix.target_os_name }}
       # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
       # run: ../../scripts/${{ matrix.target_os }}_build.sh
-      run: ./scripts/${{ matrix.target_os }}_build.sh
-      shell: bash #
+        run: ./scripts/${{ matrix.target_os }}_build.sh
+        shell: bash #
