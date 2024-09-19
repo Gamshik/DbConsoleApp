@@ -7,24 +7,31 @@ on:
 jobs:
 
   build:
-
-    strategy:
-      matrix:
-        target_os: [win-x64, linux-x64]
-
     runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build for ${{ matrix.target_os }}
+      - name: Configure git settings
+        run: |
+              git config --global user.name "${{ secrets.USER_NAME }}"
+              git config --global user.email "${{ secrets.USER_EMAIL }}"
+
+      - name: Build for win-x64
         shell: bash 
         run: |
               cd ./db_app
-              dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
-              cd ..
-              git config --global user.name "${{ secrets.USER_NAME }}"
-              git config --global user.email "${{ secrets.USER_EMAIL }}"
+              dotnet publish -c Release -r win-x64 --self-contained
+
+      - name: Build for linux-x64
+        shell: bash 
+        run: |
+              cd ./db_app
+              dotnet publish -c Release -r linux-x64 --self-contained
+            
+      - name: Git push
+        run: |
               git add .
-              git commit -m "${{ matrix.target_os }} build"
+              git commit -m "win-x64 build"
               git push
+
