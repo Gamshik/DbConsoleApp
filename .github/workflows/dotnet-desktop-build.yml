@@ -32,6 +32,6 @@ jobs:
       - name: Git push
         run: |
               git add .
-              git commit -m "win-x64 build"
+              git commit -m "Update builds"
               git push
 
