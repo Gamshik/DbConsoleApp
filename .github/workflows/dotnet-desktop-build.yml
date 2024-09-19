@@ -17,8 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build for ${{ matrix.target_os_name }}
-      # run: dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
-      # run: ../../scripts/${{ matrix.target_os }}_build.sh
-        run: ./scripts/${{ matrix.target_os }}_build.sh
-        shell: bash #
+      - name: Build for ${{ matrix.target_os }}
+        shell: bash 
+        run: |
+              cd ./db_app
+              dotnet publish -c Release -r ${{ matrix.target_os }} --self-contained
+              cd ..
+              git config --global user.name "${{ secrets.USER_NAME }}"
+              git config --global user.email "${{ secrets.USER_EMAIL }}"
+              git add .
+              git commit -m "${{ matrix.target_os }} build"
+              git push
