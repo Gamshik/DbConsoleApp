@@ -1504,7 +1504,7 @@
         }
       }
     },
-    "net8.0/linux-x64": {
+    "net8.0/win-x64": {
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1853,13 +1853,16 @@
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll": {
+          "runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll": {
             "related": ".pdb"
           }
         }
       },
       "Microsoft.Data.SqlClient.SNI.runtime/5.1.1": {
-        "type": "package"
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {}
+        }
       },
       "Microsoft.EntityFrameworkCore/8.0.8": {
         "type": "package",
@@ -2339,7 +2342,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -2378,31 +2381,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Text.Encoding.dll": {}
-        }
-      },
-      "runtime.native.System/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "runtime.unix.System.Private.Uri/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "runtime.native.System": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard/_._": {}
-        },
-        "runtime": {
-          "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
       "System.CodeDom/4.4.0": {
@@ -2589,7 +2567,7 @@
           }
         },
         "runtime": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -2639,7 +2617,7 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
             "related": ".xml"
           }
         }
@@ -2699,8 +2677,7 @@
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "runtime.unix.System.Private.Uri": "4.3.0"
+          "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
           "ref/netstandard/_._": {}
@@ -2749,7 +2726,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.Caching.dll": {
+          "runtimes/win/lib/net6.0/System.Runtime.Caching.dll": {
             "related": ".xml"
           }
         },
@@ -2781,7 +2758,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.AccessControl.dll": {
+          "runtimes/win/lib/net6.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
         },
@@ -2800,7 +2777,7 @@
           }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
+          "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
             "related": ".xml"
           }
         }
@@ -2813,7 +2790,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
@@ -2849,7 +2826,7 @@
           }
         },
         "runtime": {
-          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
         }
@@ -2879,7 +2856,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
@@ -2958,7 +2935,7 @@
           }
         },
         "runtime": {
-          "lib/net6.0/System.Windows.Extensions.dll": {
+          "runtimes/win/lib/net6.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         }
@@ -4437,35 +4414,6 @@
         "runtimes/aot/lib/netcore50/_._"
       ]
     },
-    "runtime.native.System/4.3.0": {
-      "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
-      "type": "package",
-      "path": "runtime.native.system/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "runtime.native.system.4.3.0.nupkg.sha512",
-        "runtime.native.system.nuspec"
-      ]
-    },
-    "runtime.unix.System.Private.Uri/4.3.0": {
-      "sha512": "ooWzobr5RAq34r9uan1r/WPXJYG1XWy9KanrxNvEnBzbFdQbMG7Y3bVi4QxR7xZMNLOxLLTAyXvnSkfj5boZSg==",
-      "type": "package",
-      "path": "runtime.unix.system.private.uri/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/netstandard/_._",
-        "runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
-        "runtime.unix.system.private.uri.nuspec",
-        "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll"
-      ]
-    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -5662,23 +5610,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\glebo\\.nuget\\packages\\": {},
+    "C:\\Users\\runneradmin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj",
+      "projectUniqueName": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj",
       "projectName": "app",
-      "projectPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\app.csproj",
-      "packagesPath": "C:\\Users\\glebo\\.nuget\\packages\\",
-      "outputPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\DbConsoleApp\\db_app\\app\\obj\\",
+      "projectPath": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj",
+      "packagesPath": "C:\\Users\\runneradmin\\.nuget\\packages\\",
+      "outputPath": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\glebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\runneradmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5704,9 +5652,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -5742,15 +5689,15 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
             "version": "[8.0.8, 8.0.8]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
             "version": "[8.0.8, 8.0.8]"
           },
           {
-            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
             "version": "[8.0.8, 8.0.8]"
           }
         ],
@@ -5759,100 +5706,13 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
-      "linux-x64": {
+      "win-x64": {
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
-      "libraryId": "Azure.Identity",
-      "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1901",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw",
-      "libraryId": "Microsoft.Identity.Client",
-      "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Formats.Asn1' 5.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm",
-      "libraryId": "System.Formats.Asn1",
-      "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Private.Uri' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-5f2m-466j-3848",
-      "libraryId": "System.Private.Uri",
-      "targetGraphs": [
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Private.Uri' 4.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-x5qj-9vmx-7g6g",
-      "libraryId": "System.Private.Uri",
-      "targetGraphs": [
-        "net8.0/linux-x64"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Private.Uri' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-xhfc-gr8f-ffwc",
-      "libraryId": "System.Private.Uri",
-      "targetGraphs": [
-        "net8.0/linux-x64"
-      ]
-    }
-  ]
+  }
 }
