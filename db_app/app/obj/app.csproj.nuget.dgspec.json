@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj": {}
+    "D:\\ProgrammingAndProjects\\Studies\\5sem\\RBPDiS_Githubs\\DbConsoleApp\\db_app\\app\\app.csproj": {}
   },
   "projects": {
-    "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj": {
+    "D:\\ProgrammingAndProjects\\Studies\\5sem\\RBPDiS_Githubs\\DbConsoleApp\\db_app\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj",
+        "projectUniqueName": "D:\\ProgrammingAndProjects\\Studies\\5sem\\RBPDiS_Githubs\\DbConsoleApp\\db_app\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\app.csproj",
-        "packagesPath": "C:\\Users\\runneradmin\\.nuget\\packages\\",
-        "outputPath": "D:\\a\\DbConsoleApp\\DbConsoleApp\\db_app\\app\\obj\\",
+        "projectPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\RBPDiS_Githubs\\DbConsoleApp\\db_app\\app\\app.csproj",
+        "packagesPath": "C:\\Users\\glebo\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgrammingAndProjects\\Studies\\5sem\\RBPDiS_Githubs\\DbConsoleApp\\db_app\\app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\runneradmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\glebo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,8 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -78,31 +79,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[8.0.8, 8.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.8, 8.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-              "version": "[8.0.8, 8.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
